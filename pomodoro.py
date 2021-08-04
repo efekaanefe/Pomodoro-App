@@ -48,7 +48,7 @@ def countdown():
         
     break_t = int(break_min_entry.get())*60
     if counting_down:
-        label_work.configure(text = "break")
+        label_work.configure(text = "Break")
     while counting_down:
         if break_t == 0:
             break
