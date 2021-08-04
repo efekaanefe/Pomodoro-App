@@ -11,13 +11,13 @@ root.geometry(f"{WIDTH}x{HEIGHT}")
 root.resizable(False,False)
 root.title("Pomodoro")
 
-label_work = Label(root, text = "Pomodoro Time" ,font = ("cascadia", 24)) 
+label_work = Label(root, text = "Pomodoro Time" ,font = ("arial", 24)) 
 label_work.place(x = 80 + 125, y = 50)
 
-label_time_tracker = Label(root, text = "work/break (in minutes)" ,font = ("cascadia", 24)) 
+label_time_tracker = Label(root, text = "work/break (in minutes)" ,font = ("arial", 24)) 
 label_time_tracker.place(x = 80 + 70, y = 100 )
 
-label_seperator = Label(root, text = "/" ,font = ("cascadia", 28)) 
+label_seperator = Label(root, text = "/" ,font = ("arial", 28)) 
 label_seperator.place(x = WIDTH//2-2, y = HEIGHT//2-55)
 
 work_min_entry = Entry(root, width  = 2, bg  = "white", fg = "black" ,font = ("arial", 20), insertontime=0)
@@ -91,10 +91,10 @@ def stop():
     # th.terminate()
     # process.terminate()
 
-start_btn = Button(root, text = "start", bg  = "white", fg  = "black" ,command = start, padx = 5, pady = 2, font = ("cascadia", 13))
+start_btn = Button(root, text = "start", bg  = "white", fg  = "black" ,command = start, padx = 5, pady = 2, font = ("arial", 13))
 start_btn.place(x = WIDTH//2-20, y = HEIGHT//2)
 
-cancel_btn = Button(root, text = "cancel", bg  = "white", fg  = "black" ,command = stop, padx = 5, pady = 2, font = ("cascadia", 13))
+cancel_btn = Button(root, text = "cancel", bg  = "white", fg  = "black" ,command = stop, padx = 5, pady = 2, font = ("arial", 13))
 cancel_btn.place(x = WIDTH//2-28, y = HEIGHT//2+40)
 
 root.mainloop()
